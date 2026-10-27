@@ -4125,18 +4125,25 @@ def draw_title():
     )
 
     panel(RESET_CONFIRM_YES_RECT, (62, 48, 40), RED)
-    center_text(
+    yes_label = small_font.render(
         "Yes, restart",
-        RESET_CONFIRM_YES_RECT.y + 14,
-        WHITE,
-        small_font
+        True,
+        WHITE
     )
+    screen.blit(
+        yes_label,
+        yes_label.get_rect(center=RESET_CONFIRM_YES_RECT.center)
+    )
+
     panel(RESET_CONFIRM_NO_RECT, (43, 59, 78), BLUE)
-    center_text(
+    no_label = small_font.render(
         "Cancel",
-        RESET_CONFIRM_NO_RECT.y + 14,
-        WHITE,
-        small_font
+        True,
+        WHITE
+    )
+    screen.blit(
+        no_label,
+        no_label.get_rect(center=RESET_CONFIRM_NO_RECT.center)
     )
 
 # ============================================================

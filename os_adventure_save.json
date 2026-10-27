@@ -1,10 +1,8 @@
 {
-  "unlocked_level": 1,
-  "completed_levels": [
-    0
-  ],
-  "crystals": 5,
-  "tutorial_seen": true,
+  "unlocked_level": 0,
+  "completed_levels": [],
+  "crystals": 0,
+  "tutorial_seen": false,
   "music_volume": 0.5,
   "music_muted": false
 }
